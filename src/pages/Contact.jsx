@@ -50,7 +50,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch('https://portfolio-backend-s50y.onrender.com/api/contact', {
+      const response = await fetch('https://YOUR-BACKEND-URL.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -264,7 +264,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Connect With Me</h3>
                 <div className="flex space-x-4">
-                  {socialLinks.map((social, index) => (
+                  {socialLinks.map((social) => (
                     <motion.a
                       key={social.label}
                       href={social.href}
